@@ -1,12 +1,9 @@
-package chapter13_Generic.sec03_MultiTypeParameter;
+package chapter13_Generic.sec07_Extends_Implements;
 
 public class Product<T, M> {
-	/*
-	 * 제네릭 타입은 두 개 이상의 멀티 타입 파라미터를 사용할 수 있다. 
-	 */
 	private T kind;
 	private M model;
-	
+
 	public T getKind() {
 		return this.kind;
 	}
@@ -22,5 +19,4 @@ public class Product<T, M> {
 	public void setModel(M model) {
 		this.model = model;
 	}
-
-} //end class
+}

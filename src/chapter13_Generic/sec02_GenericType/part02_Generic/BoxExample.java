@@ -5,7 +5,7 @@ public class BoxExample {
 	public static void main(String[] args) {
 		Box<String> box1 = new Box<String>();
 		box1.set("GLE");
-		//box1.set(1);  //box1은 제네릭타입이 String인 객체여서 String만 저장 가능
+		//box1.set(1);  	//box1은 제네릭타입이 String인 객체여서 String만 저장 가능
 		
 		//제네릭으로 선언되어 있으면 casting 필요 없음
 		String car = box1.get();

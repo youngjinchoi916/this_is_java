@@ -1,11 +1,10 @@
 package chapter13_Generic.sec05_BoundedTypeParameter.part02;
 
-public class Child extends Parent{
+public class NotChild{
 
-	String id = "child";
-	int age = 11;
+	String id = "not-child";
+	int age = -1;
 	
-	@Override
 	public void method2() {
 		System.out.println("child-method2 호출");
 	}

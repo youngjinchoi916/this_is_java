@@ -4,7 +4,7 @@ public class BoxExample {
 
 	public static void main(String[] args) {
 		Box box = new Box();
-		box.set("GLE");	//"GLE" 는 Object로 setting
+		box.set("GLE");		//"GLE" 는 Object로 setting
 		
 		/*값을 가져올 때(받으려는 타입으로) casting 해야함 */
 		//String car = box.get();
