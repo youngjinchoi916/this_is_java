@@ -1,0 +1,28 @@
+package chapter11_API.sec03_java_lang.part02_String.my02_Method;
+
+public class valueOf {
+
+	public static void main(String[] args) {
+		/*
+		 * [valueOf()]
+		 *   - 기본 타입의 값을 문자열로 변환한다.
+		 */
+		
+		String str1 = String.valueOf(10);
+		String str2 = String.valueOf(true);
+		
+		System.out.println(str1);
+		System.out.println(str1 instanceof String);
+		System.out.println();
+		
+		System.out.println(str2);
+		System.out.println(str2 instanceof String);
+		//System.out.println(!str2);  //boolean 타입이 아니라 String 타입이기 때문에 !str2 안됨.
+		
+		boolean temp = true;
+		System.out.println(!temp);
+		
+
+	}
+
+}
