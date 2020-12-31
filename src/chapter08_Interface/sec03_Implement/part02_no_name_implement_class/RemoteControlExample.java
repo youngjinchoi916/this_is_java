@@ -18,8 +18,11 @@ public class RemoteControlExample {
 		//new 연산자는 이렇게 선언된 클래스를 객체로 생성한다.
 		RemoteControl rc = new RemoteControl() {
 			//중괄호 {} 에는 인터페이스에 선언된 모든 추상메소드들의 실체메소드를 작성해야 한다. 그렇지 않으면 컴파일 에러
+			@Override
 			public void turnOn() { /* 실행문 */ }	
+			@Override
 			public void turnOff() { /* 실행문 */ }
+			@Override
 			public void setVolume(int volume) { /* 실행문 */ }
 		};
 	}

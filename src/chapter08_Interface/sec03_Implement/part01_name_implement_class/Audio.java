@@ -10,14 +10,19 @@ public class Audio implements RemoteControl {
 	 *     public 보다 더 낮은 접근 제한으로 작성할 수 없다.
 	 */
 	//turnOn() turnOn() 추상메소드의 실체 메소드
+	@Override
 	public void turnOn() {
 		System.out.println("Audio를 켭니다.");
 	}	
+	
 	//turnOff() 추상메소드의 실체 메소드
+	@Override
 	public void turnOff() {
 		System.out.println("Audio를 끕니다.");
 	}
+	
 	//setVolume() 추상메소드의 실체 메소드
+	@Override
 	public void setVolume(int volume) {
 		if(volume>RemoteControl.MAX_VOLUME) {
 			this.volume = RemoteControl.MAX_VOLUME;
@@ -28,4 +33,6 @@ public class Audio implements RemoteControl {
 		}
 		System.out.println("현재 Audio 볼륨 : " + volume);
 	}
+	
+	
 }

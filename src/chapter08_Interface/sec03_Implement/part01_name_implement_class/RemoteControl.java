@@ -35,7 +35,8 @@ public interface RemoteControl {
 	
 	//[디폴트 메소드를 사용하는 이유]
 	//인터페이스를 사용 중인데 newMethod() 를 추가한다면 인터페이스를 구현한 모든 객체에 newMethod()를 재정의 해야한다.(재정의 안하면 오류)
-	//디폴트 메소드는 모든 구현 객체에 재정의해야한다는 문제를 해결해줌.                                      
+	//디폴트 메소드는 모든 구현 객체에 재정의해야한다는 문제를 해결해줌.     
+	//구현객체에서 재정의 할 수 있음.
 	public default void setMute(boolean mute) {
 		if(mute) {
 			System.out.println("무음 처리합니다.");
