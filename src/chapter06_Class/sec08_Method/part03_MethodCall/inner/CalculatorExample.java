@@ -8,6 +8,9 @@ public class CalculatorExample {
 		
 		/* 메소드 호출 순서 */
 		// execute() -> avg() -> plus() -> println()
+		
+		//메소드 실행순서
+		//plus() -> avg() -> println()
 		myCalc.execute();
 	}
 

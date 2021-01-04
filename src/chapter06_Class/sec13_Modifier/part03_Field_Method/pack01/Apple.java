@@ -24,8 +24,14 @@ public class Apple {
 		method3();
 	}
 	
-	public void method1() {}		//public
-	void method2() {}					//default
-	private void method3() {}		//private
+	public void method1() {	//public
+		System.out.println("public method1");
+	}		
+	void method2() {	//default
+		System.out.println("default method2");
+	}					
+	private void method3() {	//private
+		System.out.println("private method3");
+	}	
 	
 }

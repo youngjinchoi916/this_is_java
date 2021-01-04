@@ -1,8 +1,10 @@
 package chapter06_Class.sec10_StaticMember.part04_Precautions;
 
 public class my02_car {
+	//인스턴스 필드
 	public int speed;
 
+	//인스턴스 메소드
 	public void run() {
 		System.out.println(speed + "으로 달립니다.");
 	}

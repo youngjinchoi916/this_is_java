@@ -2,7 +2,7 @@ package chapter06_Class.sec11_Final.part02_StaticFinal;
 
 public class Earth {
 	/* 
-	 * [final static] : 상수
+	 * [static final] : 상수
 	 *  - 상수 : 불변의 값을 상수(constant)라고 한다.
 	 *  - 불변의 값은 객체마다 저장할 필요가 없는 공용성을 띠고 있으며, 여러 가지 값으로 초기화 될 수 없다. 
 	 *     즉, final 필드는 객체마다 저장되고, 생성자의 매개값을 통해서 여러 가지 값으로 초기화될 수 없기 때문에 상수가 될 수 없다.

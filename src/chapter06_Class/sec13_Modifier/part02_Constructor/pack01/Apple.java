@@ -16,6 +16,8 @@ public class Apple {
 	Apple a3 = new Apple("사과");
 	
 	/* 생성자 */
+	//자동으로 추가되는 기본 생성자의 접근제한은 클래스 접근 제한과 동일함.
+	
 	public Apple(boolean b) {}
 	
 	//생성자의 접근 제한을 생략하면 default 접근 제한을 갖는다 -> 동일 패키지 내의 외부 클래스에서만 호출 가능

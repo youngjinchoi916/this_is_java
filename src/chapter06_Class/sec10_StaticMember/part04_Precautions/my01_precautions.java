@@ -42,14 +42,22 @@ public class my01_precautions {
 		method2();
 	}
 	
-	//my01_precautions ref = new my01_precautions();    //ref가 static이 아난 instance로 선언되어씩 때문에 정적블록 내부에서 참조 불가능, 사용불가능 
-	//static my01_precautions ref = new my01_precautions();  //ref가 static으로 선언 되기 때문에 정적 블록 내부에서 참조 가능
+	
+	//[1] 블록 외부에서 객체를 인스턴스로 생성 -> 정적블록 내부에서 참조 불가능, 사용불가능
+	my01_precautions ref_i = new my01_precautions();  
+	//[2] 블록 외부에서 객체를 static으로 생성 -> 정적 블록 내부에서 참조 가능
+	static my01_precautions ref_s = new my01_precautions(); 
 	
 	//정적 블록
 	static {
+		//[1] 블록 외부에서 객체를 인스턴스로 생성한 ref_i를 static 블록 내부에서 참조하면 하면 컴파일 오류 발생. 
+		//ref_i.field1 = 1000;
+		
+		//[2] 블록 외부에서 객체를 static으로 생성한 ref_s를 static 블록 내부에서 참조 가능
+		ref_s.field1 = -1000;
+		ref_s.method1();
+		
 		/* 정적 블록에서 인스턴스 멤버를 사용하고 싶다면 객체를 블록 내부에서 생성하고 사용하면 된다. */
-		// 블록 외부에서 객체를 인스턴스로 생성하면 컴파일 오류 발생. 
-		// 블록 외부에서 객체를 생성하려고 한다면 static으로 객체를 생성해야 한다.
 		my01_precautions ref = new my01_precautions();
 		
 		ref.field1 = 1000;

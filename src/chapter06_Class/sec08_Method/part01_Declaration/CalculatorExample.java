@@ -13,6 +13,7 @@ public class CalculatorExample {
 		byte x = 10;
 		byte y = 4;
 	
+		//bytes를 double에 담는다 -> 자동 타입 변환
 		double result2 = cal.divide(x, y);
 		System.out.println("result2 : "+result2);
 
