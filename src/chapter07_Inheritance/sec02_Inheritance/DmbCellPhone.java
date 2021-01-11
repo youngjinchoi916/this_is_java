@@ -19,7 +19,7 @@ public class DmbCellPhone extends CellPhone{
 
 	// 생성자
 	DmbCellPhone(String model, String color, int channel) {
-		//CellPhone 클래스(부모 클래스)의 필드
+		//CellPhone 클래스(부모 클래스)의 필드 -> 부모의 필드를 사용하려면 초기화 하고 사용해야한다.
 		this.model = model;
 		this.color = color;
 		
@@ -29,6 +29,7 @@ public class DmbCellPhone extends CellPhone{
 
 	// 메소드
 	void turnOnDmb() {
+		//channel은 DmbCellPhone 생성시 초기화됨
 		System.out.println("채널 " + channel + "번 DMB 방송 수신을 시작합니다.");
 	}
 

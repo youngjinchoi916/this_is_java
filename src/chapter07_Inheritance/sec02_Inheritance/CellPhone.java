@@ -1,5 +1,6 @@
 package chapter07_Inheritance.sec02_Inheritance;
 
+//부모 객체 -> 자식 객체에서 부모의 멤버를 가져다 쓸 수 있다.
 public class CellPhone {
 	// 필드
 	String model;
