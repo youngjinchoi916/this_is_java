@@ -13,4 +13,5 @@ public class Parent {
 	public void method4() {
 		System.out.println("부모의 method4() 호출");
 	}
-}
+	
+} //end class
