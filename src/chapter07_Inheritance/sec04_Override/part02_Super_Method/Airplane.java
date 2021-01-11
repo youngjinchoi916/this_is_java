@@ -1,6 +1,7 @@
 package chapter07_Inheritance.sec04_Override.part02_Super_Method;
 
 public class Airplane {
+	
 	public void land() {
 		System.out.println("착륙합니다.");
 	}	
@@ -10,4 +11,5 @@ public class Airplane {
 	public void takeOff() {
 		System.out.println("이륙합니다.");
 	}	
-}
+
+} //end class
