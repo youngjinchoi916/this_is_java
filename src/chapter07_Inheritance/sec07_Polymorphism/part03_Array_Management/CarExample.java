@@ -6,7 +6,7 @@ public class CarExample {
 		
 		/* 왼쪽 바퀴는 한국타이어-15, 오른쪽 바퀴는 금호타이어-15로 교체 */
 		for(int i=1; i<=5; i++) {
-			int problemLocation = car.run();  //run 리턴값 : 0(정상), 1(펑크), 2(펑크), 3(펑크), 4(펑크)
+			int problemLocation = car.run();  //타이어 전체를 한바퀴 굴리고, 펑크난 위치를 리턴받음.
 			if(problemLocation != 0) { //펑크나면
 				if(problemLocation%2 == 1) {  //홀수면 한국 타이어
 					System.out.println(car.tires[problemLocation-1].location+"HankookTire로 교체");
@@ -16,9 +16,10 @@ public class CarExample {
 					car.tires[problemLocation-1] = new KumhoTire(car.tires[problemLocation-1].location, 15);
 				}
 				
-			}			
+			}	//end if		
 			System.out.println("----------------------------------------");
 		} //end for
 		
 	} //end main
+	
 } //end class
