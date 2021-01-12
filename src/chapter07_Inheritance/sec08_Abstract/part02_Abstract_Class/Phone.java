@@ -2,6 +2,7 @@ package chapter07_Inheritance.sec08_Abstract.part02_Abstract_Class;
 
 //abstract 키워드 -> 추상클래스
 public abstract class Phone {
+	
 	//필드
 	public String owner;
 	
@@ -23,4 +24,5 @@ public abstract class Phone {
 	public void turnOff() {
 		System.out.println("폰 전원을 끕니다.");
 	}
-}
+
+} //end class
