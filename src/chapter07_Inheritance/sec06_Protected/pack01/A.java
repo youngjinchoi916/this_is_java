@@ -13,7 +13,9 @@ public class A {
 		System.out.println("A has been called");
 	}
 	
+	//protected 메소드 -> 자식클래스에서 오버라이딩 불가능
 	protected void method() {
 		System.out.println("A's protected method");
 	}
-}
+	
+} //end class

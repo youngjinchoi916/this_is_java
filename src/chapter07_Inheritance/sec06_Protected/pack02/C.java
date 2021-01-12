@@ -1,11 +1,9 @@
 package chapter07_Inheritance.sec06_Protected.pack02;
 
-import chapter07_Inheritance.sec06_Protected.pack01.*;
-
 public class C {
 	
 	/*
-	 * 클래스 A와 다른 패키지에 있는 C는 A를 상속하지 않았으므로 A의 proteced 자원을 사용 할 수 없음.
+	 * 클래스 A와 다른 패키지에 있는 C는 A를 상속하지 않았으므로 A의 protected 멤버를 사용 할 수 없음.
 	 */
 	public void method() {
 		//컴파일 에러 메시지 : The constructor A() is not visible
@@ -16,4 +14,5 @@ public class C {
 		//a.field;
 		//a.method();
 	}
-}
+	
+} //end class
