@@ -42,5 +42,6 @@ public class PromotionExample {
 		//B b3 = e;
 		//C c2 = d;
 	}
-}
+	
+} //end class
 
