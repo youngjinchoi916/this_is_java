@@ -1,12 +1,13 @@
 package chapter08_Interface.sec03_Implement.part01_name_implement_class;
 
 public class RemoteControlExample {
+	
 	public static void main(String[] args) {
 		
 		//Television tv = new Television();
 		//Television타입 변수에 대입한다고 인터페이스를 사용하는 것이 아니다
 		
-		//인터페이스로 구현 객체를 사용하려면 다음과 같이 인터페이스 변수를 선언하고 구현 객체를 대입해야 한다.
+		//인터페이스로 구현 객체를 사용하려면 다음과 같이 인터페이스 변수를 선언하고 구현 객체(구현 클래스를 객체로 생성해서)를 대입해야 한다.
 		//인터페이스 변수는 참조 타입이기 때문에 구현객체가 대입될 경우 구현 객체의 번지를 저장한다.
 		RemoteControl rc;
 		
@@ -19,9 +20,14 @@ public class RemoteControlExample {
 		rc = new Television();
 		//rc = new Audio();
 
+		//(1) 개발코드가 RemoteControl 인터페이스의 추상메소드 호출 
+		//(2) RemoteControl 인터페이스는 RemoteControl을 구현한 Television 객체의 실체 메소드 실행
+		//(3) Television 객체의 실체 메소드 실행 결과 리턴값 있으면 RemoteControl 로 리턴
+		//(4) RemoteControl에서 리턴값을 받아 개발코드로 리턴 -> 결국 실체메소드의 리턴값이 개발코드로 넘어 온다.
 		rc.turnOn();
 		rc.setVolume(10);
 		rc.turnOff();
 		
-	}
-}
+	} //end main
+	
+} //end class
