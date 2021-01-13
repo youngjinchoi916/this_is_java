@@ -18,7 +18,7 @@ public class RemoteControlExample {
 		//즉, 개발 코드의 수정 없이 객체만 갈아 끼우면 다양한 실행결과를 얻을 수 있다.
 		
 		rc = new Television();
-		//rc = new Audio();
+		// rc = new Audio();
 
 		//(1) 개발코드가 RemoteControl 인터페이스의 추상메소드 호출 
 		//(2) RemoteControl 인터페이스는 RemoteControl을 구현한 Television 객체의 실체 메소드 실행

@@ -11,6 +11,7 @@ public class Television implements RemoteControl {
 	//필드
 	private int volume;
 	
+	
 	/*
 	 * [추상메소드들에 대한 실체 메소드를 작성할 때 주의할 점]
 	 *  - 인터페이스의 모든 메소드는 기본적으로 public 접근제한을 갖기 때문에 public 보다 더 낮은 접근 제한으로 작성할 수 없다.

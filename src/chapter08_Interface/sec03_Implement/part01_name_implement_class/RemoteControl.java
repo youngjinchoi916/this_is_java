@@ -15,7 +15,6 @@ package chapter08_Interface.sec03_Implement.part01_name_implement_class;
  *  - 클래스는 필드, 생성자, 메소드를 구성 멤버로 가지는데 비해, 인터페이스는 상수와 메소드만을 구성멤버로 가진다.
  */
 public interface RemoteControl {
-	
 	/* 상수필드 */
 	//인터페이스는 객체 사용 설명서 이므로 런타임 시 데이터를 저장할 수 있는 필드를 선언할 수 없지만, 상수 필드(static final)은 선언 가능하다.
 	//상수는 인터페이스에 고정된 값으로 런타임 시에 데이터를 바꿀 수 없다. 상수를 선언할 때는 반드시 초기값을 대입해야 한다.
