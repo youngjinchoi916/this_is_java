@@ -1,10 +1,13 @@
 package chapter08_Interface.sec04_Use_Interface.part01_Abstract_Method;
 
 public class RemoteControlExample {
+	
 	public static void main(String[] args) {
-		/* 인터페이스 사용 */
-		//인터페이스로 구현 객체를 사용하려면 다음과 같이 인터페이스 변수를 선언하고 구현객체를 대입해야 한다.
-		//인터페이스 변수는 참조 타입이기 때문에 구현객체가 대입될 경우 구현 객체의 번지를 저장한다.
+		/*
+		 * [인터페이스 사용]
+		 * 	 - 인터페이스로 구현 객체를 사용하려면 다음과 같이 인터페이스 변수를 선언하고 구현객체를 대입해야 한다.
+		 *  - 인터페이스 변수는 참조 타입이기 때문에 구현객체가 대입될 경우 구현 객체의 번지를 저장한다.
+		 */
 		RemoteControl rc = null;
 		
 		/* Television 객체를 인터페이스 타입에 대입 */
@@ -22,5 +25,7 @@ public class RemoteControlExample {
 		//인터페이스의 turnOn(), turnOff() 메소드 호출 -> Audio객체의 재정의된 메소드 실행
 		rc.turnOn();
 		rc.turnOff();
-	}
-}
+	
+	} //end main
+	
+} //end class
