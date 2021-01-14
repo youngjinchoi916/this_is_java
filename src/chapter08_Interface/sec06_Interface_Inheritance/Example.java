@@ -36,6 +36,6 @@ public class Example {
 		ic.methodB();
 		ic.methodC();
 
-	}
+	} //end main
 
-}
+} //end class
