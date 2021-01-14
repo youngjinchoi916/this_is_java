@@ -18,4 +18,5 @@ public interface MyInterface {
 	public default void method2() {
 		System.out.println("MyInterface-method2 실행");
 	}
-}
+	
+} //end interface
