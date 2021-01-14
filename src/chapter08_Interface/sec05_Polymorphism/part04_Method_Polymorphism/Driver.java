@@ -9,6 +9,8 @@ public class Driver {
 	 *     어떤 구현 객체가 제공되느냐에 따라 메소드의 실행 결과는 달라질 수 있다.(매개변수의 다형성)
 	 */
 	public void drive(Vehicle vehicle) {	//호출 시 해당 인터페이스를 구현한 객체 대입 가능
+		//매개변수로 대입된 구현 객체의 run() 메소드 실행 -> 매개변수의 다형성
 		vehicle.run();
 	}
-}
+
+} //end class
