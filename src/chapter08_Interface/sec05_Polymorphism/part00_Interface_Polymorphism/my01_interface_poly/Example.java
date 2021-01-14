@@ -15,6 +15,6 @@ public class Example {
 		a.method2();
 		a.method3();
 		
-	}
+	} //end main
 
-}
+} //end class

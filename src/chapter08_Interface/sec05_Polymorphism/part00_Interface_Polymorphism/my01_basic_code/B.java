@@ -13,4 +13,5 @@ public class B {
 	void method_c() {
 		System.out.println("B의 메소드_c");
 	}
-}
+	
+} //end class

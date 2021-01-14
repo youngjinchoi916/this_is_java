@@ -15,4 +15,4 @@ public class B implements InterfaceA{
 		System.out.println("B의 메소드_c");		
 	}
 	
-}
+} //end class
