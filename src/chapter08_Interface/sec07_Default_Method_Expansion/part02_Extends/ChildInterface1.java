@@ -10,6 +10,6 @@ public interface ChildInterface1 extends ParentInterface {
      */
 	
 	//추상메소드 선언
-	public void method3();
-}
-
+	public void methodA();
+	
+} //end interface

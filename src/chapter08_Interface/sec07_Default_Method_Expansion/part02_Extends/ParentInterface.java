@@ -12,5 +12,5 @@ public interface ParentInterface {
     public default void method2() { 
     	System.out.println("ParentInterface's default method2");
     }
-}
-
+    
+} //end interface
