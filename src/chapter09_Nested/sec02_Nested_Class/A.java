@@ -1,4 +1,5 @@
 package chapter09_Nested.sec02_Nested_Class;
+
 /*
  * [중첩 클래스]
  * 	 - 어떤 클래스는 여러 클래스와 관계를 맺지만, 어떤 클래스는 특정 클래스와 관계를 맺는다.
@@ -24,7 +25,9 @@ class A {
 		B() { System.out.println("B 객체가 생성됨"); }
 		int field1;
 		//static int field2;					//정적 필드 선언 불가
-		void method1() { }
+		void methodB() {
+			System.out.println("B의 인스턴스 메소드");
+		}
 		//static void method2() { }		//정적 메소드 선언 불가
 	}
 	//end class B
@@ -36,8 +39,12 @@ class A {
 		C() { System.out.println("C 객체가 생성됨"); }
 		int field1;
 		static int field2;
-		void method1() { }
-		static void method2() { }
+		void methodC1() { 
+			System.out.println("C의 인스턴스 메소드");
+		}
+		static void methodC2() {
+			System.out.println("C의 정적 메소드");
+		}
 	}
 	//end class C
 	
@@ -49,15 +56,17 @@ class A {
 		class D {
 			D() { System.out.println("D 객체가 생성됨"); }
 			int field1;
-			//static int field2;
-			void method1() { }
-			//static void method2() { }
+			//static int field2;		//정적 필드 선언 불가
+			void methodD() { 
+				System.out.println("D의 인스턴스 메소드");
+			}
+			//static void method2() { }		//정적 메소드 선언 불가
 		} //end class D
 		
 		//메소드 내에서 객체를 생성고 사용해야 한다.
 		D d = new D();
 		d.field1 = 3;
-		d.method1();
+		d.methodD();
 	}
 	//end method()
 
