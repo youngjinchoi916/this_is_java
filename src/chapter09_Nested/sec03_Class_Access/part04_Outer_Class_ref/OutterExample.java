@@ -1,6 +1,7 @@
 package chapter09_Nested.sec03_Class_Access.part04_Outer_Class_ref;
 
 public class OutterExample {
+	
 	public static void main(String[] args) {
 		//바깥 클래스 객체 생성
 		Outter outter = new Outter();
@@ -9,5 +10,6 @@ public class OutterExample {
 		Outter.Nested nested = outter.new Nested();
 		
 		nested.print();
-	}
-}
+	} //end main
+	
+} //end class
