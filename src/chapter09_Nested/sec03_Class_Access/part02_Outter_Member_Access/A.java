@@ -25,11 +25,11 @@ public class A {
 		 * 인스턴스 멤버 클래스 안에서는 바깥 클래스의 모든(인스턴스, 정적) 필드와 메소드에 접근가능
 		 */
 		void method() {
-			//인스턴스 필드, 인스턴스 메소드
+			//인스턴스 필드, 인스턴스 메소드 -> 접근 가능
 			instance_num = 10;
 			instanceMethod();
 			
-			//정적 필드, 정적 메소드
+			//정적 필드, 정적 메소드 -> 접근 가능
 			static_num = 10;
 			staticMethod();
 		}
@@ -45,17 +45,18 @@ public class A {
 			//instance_num = 100;
 			//instanceMethod();
 			
-			/*
-			 * 정적 멤버 클래스 안에서 바깥 클래스의 인스턴스 필드, 인스턴스 메소드에 접근하고 싶다면 바깥 클래스를 객체로 생성하고 접근한다.
-			 */
-			A a = new A();
-			a.instance_num = 100;
-			a.instanceMethod();
-			
+			//정적 필드, 정적 메소드 -> 접근 가능
 			static_num = 100;
 			staticMethod();
+			
+			//만약, 정적 멤버 클래스 안에서 바깥 클래스의 인스턴스 필드/메소드에 접근하고 싶다면?
+			//		-> 바깥 클래스를 객체로 생성하고 접근한다.
+			A a = new A();
+			
+			//바깥 클래스를 객체로 생성하고, 인스턴스 필드/메소드에 접근 가능
+			a.instance_num = 100;
+			a.instanceMethod();
 		}
 	} //end static class C
 	
 } //end class A
-
