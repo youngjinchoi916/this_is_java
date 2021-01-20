@@ -1,6 +1,8 @@
 package chapter09_Nested.sec05_Anonymous.part02_Anonymous_Implements.my02_Button_Event;
 
 public class Button {
+	
+	//인터페이스 타입의 필드
 	OnClickListener listener;
 	
 	//setter ->외부에서 구현객체를 받아 필드에 대입

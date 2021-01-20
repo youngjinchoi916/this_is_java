@@ -6,6 +6,7 @@ public class Window {
 	Button button2 = new Button();
 	
 	//필드의 초기값으로 대입
+	//중첩인터페이스의 익명 구현 객체
 	Button.OnClickListener listener = new Button.OnClickListener() {
 		@Override
 		public void onClick() {
@@ -13,11 +14,12 @@ public class Window {
 		}
 	};
 	
+	//생성자 -> Window클래스가 객체로 생성되면, 버튼에 listener 설정.
 	public Window() {
-		//필드의 초기값으로 세팅한 익명 구현 객체가 대입됨
+		//(1) 필드의 초기값으로 세팅된 익명 구현 객체가 대입됨
 		button1.setOnClickListener(listener);
 		
-		//매개값으로 익명 구현 객체 대입
+		//(2) 매개값으로 익명 구현 객체 대입
 		button2.setOnClickListener(new Button.OnClickListener() {
 			@Override
 			public void onClick() {
