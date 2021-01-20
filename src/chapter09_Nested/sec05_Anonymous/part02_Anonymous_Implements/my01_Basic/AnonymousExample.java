@@ -3,7 +3,9 @@ package chapter09_Nested.sec05_Anonymous.part02_Anonymous_Implements.my01_Basic;
 public class AnonymousExample {
 	
 	public static void main(String[] args) {
+		//Anonymous 객체 생성
 		Anonymous anony = new Anonymous();		
+		
 		//익명 객체 필드 사용
 		anony.field.turnOn();
 		anony.field.turnOff();

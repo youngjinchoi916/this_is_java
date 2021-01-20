@@ -1,6 +1,7 @@
 package chapter09_Nested.sec05_Anonymous.part02_Anonymous_Implements.my01_Basic;
 
 public class Anonymous {
+	
 	/*
 	 * [익명 객체(Anonymous)]
 	 * 	 - 익명 객체는 이름 없는 객체를 말한다. 익명 객체는 단독으로 생성할 수 없고 클래스를 상속하거나 인터페이스를 구현해야만 생성할 수 있다.
