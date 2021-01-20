@@ -16,17 +16,18 @@ public class AnonymousExample {
 		anony.method1();
 		System.out.println();
 		
-		//익명 객체 매개값 사용(매개변수 타입이 Person인 자리에 Person의 익명 구현 객체가 대입됨)
+		//[3] 메소드 매개값으로 익명 자식 객체 대입(매개변수 타입이 Person인 자리에 Person의 익명 자식 객체가 대입됨)
 		anony.method2(new Person() {
 			public void study() {
 				System.out.println("공부합니다.");
 			}
 			@Override
 			public void wake() {
-				System.out.println("8시에 일어납니다.");
+				System.out.println("9시에 일어납니다.");
 				study();
 			}
 		});
 		
 	} //end main
+	
 } //end class
