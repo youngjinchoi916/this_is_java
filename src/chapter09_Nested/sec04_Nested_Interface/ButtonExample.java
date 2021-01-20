@@ -13,8 +13,12 @@ public class ButtonExample {
 		btn.setOnClickListener(new CallListener());
 		btn.touch();	//CallListener의 touch() 메소드 호출
 		
+		System.out.println();
+		
 		//OnClickListener를 구현한 객체를 Button 클래스의 필드로 setting
 		btn.setOnClickListener(new MessageListener());
 		btn.touch();	//MessageListener의 touch() 메소드 호출
-	}
-}
+	
+	} //end main
+	
+} //end class

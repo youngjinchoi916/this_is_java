@@ -28,4 +28,5 @@ public class Button {
 		//중첩인터페이스의 추상메소드 -> OnClickListener를 구현한 객체에서 반드시 재정의
 		void onClick();
 	}
-}
+
+} //end class
