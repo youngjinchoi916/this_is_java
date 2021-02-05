@@ -5,6 +5,7 @@ public class my12_split {
 	 * [split()]
 	 *   - 문자열이 특정 구분자(delimiter)로 연결되어 있을 경우, 
 	 *     String 클래스의 split() 메소드를 이용하면 구분자를 기준으로 부분 문자열을 분리할 수 있다. 
+	 *   - 구분자가 여러 종류로 되어있을 때 처리 가능
 	 */
 	public static void main(String[] args) {
 
