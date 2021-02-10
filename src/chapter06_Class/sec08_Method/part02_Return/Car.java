@@ -5,16 +5,15 @@ public class Car {
 	int gas;
 
 	// 생성자
-	public Car() {
-	}
+	public Car() {}
 
 	public void setGas(int gas) {
 		this.gas = gas;
 	}
 
 	/* 리턴값이 있는 메소드 */
-	// 반드시 리턴문을 사용해서 리턴값을 지정해야 한다.
-	// return문이 실행되면 메소드는 즉시 종료 된다.
+	//리턴 타입이 있는 메소드는 반드시 리턴문을 사용해서 리턴값을 지정해야 한다.
+	//return문이 실행되면 메소드는 즉시 종료 된다.
 	public boolean isLeftGas() {
 		if (gas == 0) {
 			System.out.println("gas가 없습니다.");
@@ -26,7 +25,7 @@ public class Car {
 	}
 
 	/* 리턴값이 없는 메소드 */
-	// void로 선언된 메소드에서도 return문을 사용할 수 있다. -> return문 사용시 메소드 실행을 강제 종료 시킨다
+	//void로 선언된 메소드에서도 return문을 사용할 수 있다. -> return문 사용시 메소드 실행을 강제 종료 시킨다
 	public void run() {
 		while (true) {
 			if (gas > 0) {
