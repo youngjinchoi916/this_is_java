@@ -3,6 +3,7 @@ package chapter06_Class.sec08_Method.part01_Declaration;
 public class CalculatorExample {
 
 	public static void main(String[] args) {
+		//객체 생성
 		Calculator cal = new Calculator();
 		
 		cal.powerOn();
@@ -23,7 +24,7 @@ public class CalculatorExample {
 		int result3 = cal.sum1(array);
 		System.out.println("result3 : "+result3);
 		
-		// [2] 배열 생성 후 매개변수로 넘긴다.
+		// [2] 매개변수로 넘길 때 배열을 생성한다.
 		int result4 = cal.sum1(new int[] {2, 4, 6, 8});
 		System.out.println("result4 : "+result4);
 		
