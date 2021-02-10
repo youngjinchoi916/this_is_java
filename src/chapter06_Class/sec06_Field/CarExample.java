@@ -3,6 +3,7 @@ package chapter06_Class.sec06_Field;
 public class CarExample {
 
 	public static void main(String[] args) {
+		//객체 생성
 		Car car = new Car();
 		
 		System.out.println("제조회사 : "+car.company);
@@ -16,6 +17,7 @@ public class CarExample {
 		System.out.println("[최고 속도 변경]");
 		car.maxSpeed = 400;  
 		System.out.println("최고속도 : "+car.maxSpeed);
+	
 	} //end main
 
 } //end class
