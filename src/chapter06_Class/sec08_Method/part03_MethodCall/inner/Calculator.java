@@ -2,7 +2,10 @@ package chapter06_Class.sec08_Method.part03_MethodCall.inner;
 
 public class Calculator {
 
-	// [객체 내부 메소드 호출하기]
+	/* 
+	 * [객체 내부 메소드 호출하기]
+	 *   - 단순 메소드 이름으로 호출한다
+	 */
 	public int plus(int x, int y) {
 		int result = x + y;
 		return result;
