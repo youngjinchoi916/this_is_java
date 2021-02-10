@@ -2,8 +2,10 @@ package chapter06_Class.sec08_Method.part03_MethodCall.outer;
 
 public class Car {
 	
+	//필드
 	public int speed;
 
+	//getter
 	public int getSpeed() {
 		return speed;
 	}

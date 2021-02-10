@@ -2,9 +2,12 @@ package chapter06_Class.sec08_Method.part03_MethodCall.outer;
 
 public class CarExample {
 
-	//객체 외부 메소드 호출
+	/* 
+	 * [객체 외부 메소드 호출]
+	 *   - 객체 생성 후 참조 변수로 메소드 호출
+	 */
 	public static void main(String[] args) {
-		
+		//객체 생성
 		Car myCar = new Car();
 		
 		//리턴값이 없거나, 있어도 리턴값을 받지 않을 경우
