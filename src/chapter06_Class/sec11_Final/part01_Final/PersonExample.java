@@ -9,7 +9,7 @@ public class PersonExample {
 		System.out.println(p1.ssn);
 		System.out.println(p1.name);
 
-		/* Person 클래스의 nation, ssn 필드는 final로 선언되어 변경 불가능 */
+		/* Person 클래스의 final 필드(nation, ssn)는 값 수정 불가능 */
 		//p1.nation = "usa";
 		//p1.ssn = "654321-7654321";
 		
