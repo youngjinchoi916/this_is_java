@@ -34,4 +34,4 @@ public class Apple {
 		System.out.println("private method3");
 	}	
 	
-}
+} //end class
