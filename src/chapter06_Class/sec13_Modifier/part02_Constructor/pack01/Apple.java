@@ -18,12 +18,15 @@ public class Apple {
 	/* 생성자 */
 	//자동으로 추가되는 기본 생성자의 접근제한은 클래스 접근 제한과 동일함.
 	
+	//public 생성자
 	public Apple(boolean b) {}
 	
-	//생성자의 접근 제한을 생략하면 default 접근 제한을 갖는다 -> 동일 패키지 내의 외부 클래스에서만 호출 가능
+	//default 생성자(생성자의 접근 제한 생략 시)
+	//동일 패키지 내의 외부 클래스에서만 호출 가능
 	Apple(int b) {}
 	
-	//private 접근 제한 -> 내부 클래스에서만 호출 가능
+	//private 생성자
+	//내부 클래스에서만 호출 가능
 	private Apple(String s) {}
 	
 } //end class
