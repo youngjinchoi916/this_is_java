@@ -16,7 +16,7 @@ public class Car {
 	private int speed;
 	private boolean stop;
 
-	// 생성자
+	//생성자 -> 기본 생성자
 
 	//Getter() 메소드 : 외부에서 객체의 데이터를 읽을 때 사용함. 
 	//객체의 외부에서 객체의 필드값을 사용하기에 부적절한 경우에는 getter 메소드로 필드값을 가공한 후 외부로 전달한다.
@@ -31,6 +31,7 @@ public class Car {
 			return;    //return문을 만나는 즉시 메소드 실행 종료
 		} else {
 			this.speed = speed;
+			this.stop = false;
 		}
 	}
 
@@ -41,6 +42,7 @@ public class Car {
 	public void setStop(boolean stop) {
 		this.stop = stop;
 		this.speed = 0;
+		System.out.println("차량이 멈춥니다.");
 	}
 	
 } //end class
