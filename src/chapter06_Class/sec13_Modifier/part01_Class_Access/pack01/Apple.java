@@ -12,4 +12,5 @@ class Apple {
 	/* Apple과 다른 클래스이지만 public 클래스인 Cherry 클래스 접근 가능 */
 	//단, Cherry가 속한 패키지를 import 해야만 접근 가능
 	Cherry cherry;
-}
+	
+} //end class
