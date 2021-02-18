@@ -3,6 +3,7 @@ package chapter13_Generic.sec02_GenericType.part02_Generic;
 public class BoxExample {
 
 	public static void main(String[] args) {
+		//Box 객체를 생성할 때 구체적인 타입이 지정딤.
 		Box<String> box1 = new Box<String>();
 		box1.set("GLE");
 		//box1.set(1);  	//box1은 제네릭타입이 String인 객체여서 String만 저장 가능
@@ -18,6 +19,7 @@ public class BoxExample {
 		//제네릭으로 선언되어 있으면 casting 필요 없음
 		Apple apple = box2.get();
 		System.out.println("apple : "+apple.name);
-	}
+		
+	} //end main
 
-}
+} //end class
