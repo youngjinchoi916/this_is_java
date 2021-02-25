@@ -1,6 +1,7 @@
 package chapter13_Generic.sec04_GenericMethod.part02;
 
 public class Pair<K, V> {
+	
 	private K key;
 	private V value;
 
@@ -24,4 +25,5 @@ public class Pair<K, V> {
 	public V getValue() {
 		return value;
 	}
-}
+	
+} //end class
