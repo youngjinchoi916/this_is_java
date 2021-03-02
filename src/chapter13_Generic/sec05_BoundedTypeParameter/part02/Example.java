@@ -11,6 +11,7 @@ public class Example {
 		//컴파일시 강한 타입 체크 -> 매개변수 타입에 Parent 타입의 객체 또는 Parent를 상속한 객체만 들어올 수 있다.
 		//Util.testMethod(p1, n1); 	
 		Util.testMethod(p1, c1);
-	}
+		
+	} //end main
 
-}
+} //end class
