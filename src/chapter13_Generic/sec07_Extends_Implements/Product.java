@@ -1,6 +1,7 @@
 package chapter13_Generic.sec07_Extends_Implements;
 
 public class Product<T, M> {
+	
 	private T kind;
 	private M model;
 
@@ -19,4 +20,5 @@ public class Product<T, M> {
 	public void setModel(M model) {
 		this.model = model;
 	}
-}
+
+} //end class

@@ -16,4 +16,4 @@ public class ChildProduct<T, M, C> extends Product<T, M> {
 		this.company = company;
 	}
 
-}
+} //end class
