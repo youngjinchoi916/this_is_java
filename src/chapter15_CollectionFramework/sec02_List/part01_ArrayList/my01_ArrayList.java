@@ -6,7 +6,7 @@ import java.util.List;
 public class my01_ArrayList {
 
 	/*
-	 * [List]
+	 * [List 인터페이스]
 	 * 		- List 컬렉션은 객체를 일렬로 늘어놓은 구조를 가지고 있다.
 	 *       객체를 인덱스로 관리하기 때문에 객체를 저장하면 자동 인덱스가 부여되고 인덱스로 객체를 검색, 삭제할 수 있는 기능을 제공한다.
 	 *     - List는 객체 자체를 저장하는 것이 아니라 객체의 번지를 참조한다.
@@ -15,7 +15,7 @@ public class my01_ArrayList {
 	 */
 	public static void main(String[] args) {
 		/*
-		 * [ArrayList] : 싱글스레드에서만 사용
+		 * [ArrayList 구현클래스] : 싱글스레드에서만 사용
 		 * 	 - ArrayList는 List 인터페이스의 구현클래스로, ArrayList에 객체를 추가하면 객체가 인덱스로 관리된다.
 		 * 	 - 인덱스로 객체를 관리한다는 점이 배열과 유사하지만, 
 		 * 			배열은 생성 시 크기가 고정되는 특징이 있고, 
